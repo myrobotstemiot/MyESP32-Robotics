@@ -5,7 +5,7 @@ module.exports = {
     description : 'MyESP32.\n',
     author : 'kruthong',
     website : 'http://www.myrobotstem.com/',
-    email : 'kruthong@gmail.com',
+    email : 'myrobotstem@gmail.com',
     git : 'https://github.com/myrobotstemiot/MyESP32-Robotics',
     image : '/static/display.jpg',
     version : '1.0.0'
