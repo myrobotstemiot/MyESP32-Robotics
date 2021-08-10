@@ -229,25 +229,25 @@ Blockly.Blocks["Ultrasonic sensor"] = {
       this.appendDummyInput()
           .appendField("Ultrasonic Echo")
           .appendField(new Blockly.FieldDropdown([
-                                              ["A0 (32)", "0"],
-                                              ["A1 (33)", "1"],	
-                                              ["A2 (25)", "2"],
-                                              ["A3 (26)", "3"],
-                                              ["A4 (27)", "4"],
-                                              ["A5 (12)", "5"],
-                                              ["A6 (13)", "6"],
-                                              ["A7 (2)", "7"]]), "Echo");
+                                              ["A0 (32)", "32"],
+                                              ["A1 (33)", "33"],	
+                                              ["A2 (25)", "25"],
+                                              ["A3 (26)", "26"],
+                                              ["A4 (27)", "27"],
+                                              ["A5 (12)", "12"],
+                                              ["A6 (13)", "13"],
+                                              ["A7 (2)", "2"]]), "Echo");
       this.appendDummyInput()
           .appendField("Trig")
           .appendField(new Blockly.FieldDropdown([
-                                              ["A0 (32)", "0"],
-                                              ["A1 (33)", "1"],
-                                              ["A2 (25)", "2"],
-                                              ["A3 (26)", "3"],
-                                              ["A4 (27)", "4"],
-                                              ["A5 (12)", "5"],
-                                              ["A6 (13)", "6"],
-                                              ["A7 (2)", "7"]]), "Trig");
+                                              ["A0 (32)", "32"],
+                                              ["A1 (33)", "33"],	
+                                              ["A2 (25)", "25"],
+                                              ["A3 (26)", "26"],
+                                              ["A4 (27)", "27"],
+                                              ["A5 (12)", "12"],
+                                              ["A6 (13)", "13"],
+                                              ["A7 (2)", "2"]]), "Trig");
       this.setInputsInline(true);
       this.setOutput(true, "Number");
       this.setColour(45);
