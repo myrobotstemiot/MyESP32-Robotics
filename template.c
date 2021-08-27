@@ -8,7 +8,6 @@
 #include "MyESP32.h"
 
 
-//SSD1306Wire display(0x3c, 21, 22);
 ${EXTINC}
 
 ${VARIABLE}

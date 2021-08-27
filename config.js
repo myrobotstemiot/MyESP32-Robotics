@@ -8,5 +8,5 @@ module.exports = {
     email : 'myrobotstem@gmail.com',
     git : 'https://github.com/myrobotstemiot/MyESP32-Robotics/',
     image : '/static/display.jpg',
-    version : '1.0.0',
+    version : '2.0.0',
 };
