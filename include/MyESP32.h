@@ -11,15 +11,11 @@
 #include <esp_wifi.h>
 #include <SPI.h>
 
-//#include "SSD1306Wire.h"
-//#include "SH1106.h"
 #include "MyESP32_Motor_drive.h"
 #include "MyESP32_Servo_lib.h"
 #include "MyESP32_IO.h"
 #include "Adafruit_TCS34725.h"
 #include "Arduino_GFX_Library.h"
-//#include "Adafruit_TCS34725.h"
-//#include "PCF8574.h"
 
 #include "vector"
 #define TONE_CHANNEL 1
@@ -30,7 +26,6 @@ static const uint8_t KB_BUZZER = 14;
 #define SOUND_ON (1 << (SOUND_RESOLUTION - 1))
 #define SOUND_OFF 0
 
-//PCF8574 botton(0x20);
 unsigned long timeElapsed;
 
 SSD1306Wire display(0x3c, 21, 22);
@@ -38,8 +33,6 @@ SSD1306Wire display(0x3c, 21, 22);
 Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_50MS, TCS34725_GAIN_1X);
 Arduino_DataBus *bus = new Arduino_ESP32SPI(4 /* DC */, 5 /* CS */, 18 /* SCK */, 23 /* MOSI */, 19 /* MISO */);
 Arduino_GFX *gfx = new Arduino_ST7735(bus, -1 /* RST*/, 0 /* rotation */, false /* IPS */,128 /* width */, 160 /* height */, 0 /* col offset 1 */, 0 /* row offset 1 */, 0 /* col offset 2 */, 0 /* row offset 2 */, false /* BGR */);
-
-//Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_50MS, TCS34725_GAIN_1X);
 
 #define M1A 16
 #define M1B 17
@@ -63,8 +56,6 @@ uint32_t _lastPosition;
 float Kp = 1;
 float Ki = 0;
 float Kd = 0;
-// #define A8 4
-// #define A9  36
 int TCS_init = 0;
 
 void wait();
@@ -158,14 +149,14 @@ void MyESP32(){
   gfx->setCursor(40, 70);
   gfx->println(String("STEM"));
   gfx->setCursor(20, 100);
-  gfx->println(String("V.1.0.0"));
+  gfx->println(String("V.2.0.0"));
   
   display.init();
   display.flipScreenVertically();
   display.setFont(ArialMT_Plain_16);
   display.drawString(25,0,"MyESP32");
   display.drawString(30,20,"MyrobotStem");
-  display.drawString(25,40,"Version 1.0.0");
+  display.drawString(25,40,"Version 2.0.0");
   display.display();
   delay(1000);
   
