@@ -18,14 +18,14 @@ module.exports = function(Blockly) {
   Blockly.JavaScript["OUT_MyESP32"] = function(block) {
     let dropdown_pin = block.getFieldValue("pin");
     let dropdown_status = Blockly.JavaScript.valueToCode(block, 'status', Blockly.JavaScript.ORDER_ATOMIC) || 0;
-    let code = `out(${dropdown_pin},${dropdown_status})`;
-    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+    let code = `out(${dropdown_pin},${dropdown_status});`;
+    return code;
   };
   Blockly.JavaScript["Buzzer_MyESP32"] = function(block) {
     let dropdown_status = block.getFieldValue("status");
-    let code = `pinMode(23,OUTPUT);\n`;
-        code += `digitalWrite(23,${dropdown_status})`;
-    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+    let code = `pinMode(19,OUTPUT);\n`;
+        code += `digitalWrite(19,${dropdown_status});`;
+    return code;
   };
   Blockly.JavaScript['Knob_MyESP32'] = function(block) {  
     var code = '(analogRead(39))';  
@@ -42,6 +42,5 @@ module.exports = function(Blockly) {
     let code = `digitalRead(${dropdown_CH})`;
     return [code, Blockly.JavaScript.ORDER_ATOMIC];
   };
-  
 
 };
