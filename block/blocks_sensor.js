@@ -260,14 +260,14 @@ Blockly.Blocks["IR remote sensor"] = {
       this.appendDummyInput()
           .appendField("IR remote")
           .appendField(new Blockly.FieldDropdown([
-                                              ["A0 (32)", "0"],
-                                              ["A1 (33)", "1"],
-                                              ["A2 (25)", "2"],
-                                              ["A3 (26)", "3"],
-                                              ["A4 (27)", "4"],
-                                              ["A5 (12)", "5"],
-                                              ["A6 (13)", "6"],
-                                              ["A7 (2)", "7"]]), "pin");
+                                              ["A0 (32)", "32"],
+                                              ["A1 (33)", "33"],	
+                                              ["A2 (25)", "25"],
+                                              ["A3 (26)", "26"],
+                                              ["A4 (27)", "27"],
+                                              ["A5 (12)", "12"],
+                                              ["A6 (13)", "13"],
+                                              ["A7 (2)", "2"]]), "pin");
       this.setInputsInline(true);
       this.setOutput(true, "Number");
       this.setColour(45);
@@ -334,14 +334,14 @@ Blockly.Blocks['ds18b20_init_MyESP32'] = {
     this.appendDummyInput()
           .appendField("DS18B20 Init pin")
           .appendField(new Blockly.FieldDropdown([
-                                              ["A0 (32)", "0"],
-                                              ["A1 (33)", "1"],
-                                              ["A2 (25)", "2"],
-                                              ["A3 (26)", "3"],
-                                              ["A4 (27)", "4"],
-                                              ["A5 (12)", "5"],
-                                              ["A6 (13)", "6"],
-                                              ["A7 (2)", "7"]]), "pin");
+                                              ["A0 (32)", "32"],
+                                              ["A1 (33)", "33"],	
+                                              ["A2 (25)", "25"],
+                                              ["A3 (26)", "26"],
+                                              ["A4 (27)", "27"],
+                                              ["A5 (12)", "12"],
+                                              ["A6 (13)", "13"],
+                                              ["A7 (2)", "2"]]), "pin");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(30);
@@ -379,14 +379,14 @@ Blockly.Blocks["IRremote_sensor"] = {
       this.appendDummyInput()
           .appendField("pin")
           .appendField(new Blockly.FieldDropdown([
-                                              ["A0 (32)", "0"],
-                                              ["A1 (33)", "1"],
-                                              ["A2 (25)", "2"],
-                                              ["A3 (26)", "3"],
-                                              ["A4 (27)", "4"],
-                                              ["A5 (12)", "5"],
-                                              ["A6 (13)", "6"],
-                                              ["A7 (2)", "7"]]), "pin");
+                                              ["A0 (32)", "32"],
+                                              ["A1 (33)", "33"],	
+                                              ["A2 (25)", "25"],
+                                              ["A3 (26)", "26"],
+                                              ["A4 (27)", "27"],
+                                              ["A5 (12)", "12"],
+                                              ["A6 (13)", "13"],
+                                              ["A7 (2)", "2"]]), "pin");
       this.appendDummyInput()
         .appendField("SET TO")
         .appendField(
